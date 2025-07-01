@@ -1,0 +1,30 @@
+{
+  "defaultMode": "acceptEdits",
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Read(~/.zshrc)",
+      "Bash(afplay:*)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(rm -rf *)",
+      "Bash(rm -rf /)"
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"タスクが完了しました！\" with title \"Claude君\" sound name \"Crystal\"'"
+          }
+        ]
+      }
+    ]
+  },
+  "includeCoAuthoredBy": false
+}
