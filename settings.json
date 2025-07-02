@@ -5,7 +5,13 @@
       "Bash(npm run lint)",
       "Bash(npm run test:*)",
       "Read(~/.zshrc)",
-      "Bash(afplay:*)"
+      "Bash(afplay:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:uithub.com)",
+      "mcp__Context7__resolve-library-id",
+      "mcp__Context7__get-library-docs",
+      "mcp__github__list_commits",
+      "mcp__github__get_file_contents"
     ],
     "deny": [
       "Bash(curl:*)",
@@ -20,7 +26,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"タスクが完了しました！\" with title \"Claude君\" sound name \"Crystal\"'"
+            "command": "sh -c 'osascript -e \"display notification \\\"承認よろしくー\\\" with title \\\"$(basename $(pwd))\\\" sound name \\\"Glass\\\"\"'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'osascript -e \"display notification \\\"終わったよ\\\" with title \\\"$(basename $(pwd))\\\" sound name \\\"Crystal\\\"\"'"
           }
         ]
       }
