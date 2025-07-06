@@ -1,3 +1,15 @@
+---
+allowed-tools: Bash(pbcopy:*), Bash(echo:*), Read, Glob, LS
+description: Copy specified content to clipboard
+---
+
+## Context
+
+- Arguments provided: `$ARGUMENTS`
+- Current working directory: `!pwd`
+
+## Your task
+
 Copy the specified content to the clipboard based on the provided arguments.
 
 ## Usage
