@@ -33,7 +33,7 @@ description: Review and respond to PR comments
 
 4. **Propose review responses**:
    - If there are **3 or more** review comments:
-     - Create a `review-pr-{PR_number}.md` file
+     - Create a `review-pr-{PR_number}.md` file **in Japanese**
      - For each review comment, summarize:
        - Review content
        - Current implementation
@@ -45,6 +45,10 @@ description: Review and respond to PR comments
 5. **Implement approved changes**:
    - Execute changes based on approved response strategies
    - Ensure each change clearly addresses the corresponding review comment
+   - When creating commits to address reviews:
+     - **Good**: Describe what was changed and why (e.g., "Fix type safety in user validation", "Improve error handling for API responses")
+     - **Bad**: Generic messages like "address review comments", "fix PR feedback", "respond to review"
+     - Each commit should describe the actual change made, not just that it addresses a review
 
 ## User additional instructions
 
