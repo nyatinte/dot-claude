@@ -1,5 +1,19 @@
+# すべてを除外してから、必要なものを明示的に含める
 *
+
+# 設定ファイル
+!.gitignore
 !CLAUDE.md
 !settings.json
+!terminal-notifier-reference.md
+
+# ディレクトリとその中身
+!commands/
 !commands/**
-!.gitignore
+!scripts/
+!scripts/**
+
+# ログファイルは除外（念のため）
+session-summary.log
+notification.log
+tmp-last-hook-output.txt

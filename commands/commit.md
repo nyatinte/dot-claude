@@ -1,5 +1,6 @@
 ---
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*)
+denied-tools: Bash(git push:*), Bash(git commit -n:*), Bash(git commit --no-verify)
 description: Create a git commit
 ---
 

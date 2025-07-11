@@ -1,5 +1,5 @@
 {
-  "defaultMode": "acceptEdits",
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(npm run lint)",
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh -c 'osascript -e \"display notification \\\"承認よろしくー\\\" with title \\\"$(basename $(pwd))\\\" sound name \\\"Glass\\\"\"'"
+            "command": "/Users/nyante/.claude/scripts/claude-notify.sh approval"
           }
         ]
       }
@@ -36,11 +36,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh -c 'osascript -e \"display notification \\\"終わったよ\\\" with title \\\"$(basename $(pwd))\\\" sound name \\\"Crystal\\\"\"'"
+            "command": "/Users/nyante/.claude/scripts/claude-notify.sh complete"
           }
         ]
       }
     ]
   },
-  "includeCoAuthoredBy": false
+  "defaultMode": "acceptEdits",
+  "model": "opus"
 }
