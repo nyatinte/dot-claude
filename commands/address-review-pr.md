@@ -1,5 +1,5 @@
 ---
-allowed-tools: mcp__github__get_pull_request, mcp__github__get_pull_request_files, mcp__github__get_pull_request_status, mcp__github__get_pull_request_comments, mcp__github__get_pull_request_reviews, Bash(gh pr view:*), Bash(gh pr list:*), Write(*review-pr-*.md), Read(*), Edit(*), MultiEdit(*)
+allowed-tools: mcp__github__get_pull_request, mcp__github__get_pull_request_files, mcp__github__get_pull_request_status, mcp__github__get_pull_request_comments, mcp__github__get_pull_request_reviews, Bash(gh pr view:*), Bash(gh pr list:*), Bash(gh repo view:*), Write(*review-pr-*.md), Read(*), Edit(*), MultiEdit(*)
 denied-tools: Bash(git push:*), mcp__github__merge_pull_request
 description: Review and respond to PR comments
 ---
@@ -8,6 +8,8 @@ description: Review and respond to PR comments
 
 - Current branch: `!git branch --show-current`
 - PR argument: $ARGUMENTS
+- `!gh repo view --json owner,name`
+- ultrathink
 
 ## Your task
 
