@@ -4,6 +4,16 @@
     "allow": [
       "Bash(npm run lint)",
       "Bash(npm run test:*)",
+      "Bash(bun run lint)",
+      "Bash(bun run test:*)",
+      "Bash(bun run build)",
+      "Bash(bun run ci)",
+      "Bash(bun run format)",
+      "Bash(bun run typecheck)",
+      "Bash(bun run check)",
+      "Bash(rg:*)",
+      "Bash(fd:*)",
+      "Bash(eza:*)",
       "Read(~/.zshrc)",
       "Bash(afplay:*)",
       "WebFetch(domain:github.com)",
@@ -42,6 +52,5 @@
       }
     ]
   },
-  "defaultMode": "acceptEdits",
   "model": "opus"
 }
