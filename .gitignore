@@ -8,13 +8,11 @@
 !settings.json
 !terminal-notifier-reference.md
 
-# ディレクトリとその中身
 !commands/
 !commands/**
 !scripts/
 !scripts/**
 
-# ログファイルは除外（念のため）
 session-summary.log
 notification.log
 tmp-last-hook-output.txt
