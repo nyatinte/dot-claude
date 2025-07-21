@@ -26,7 +26,8 @@ description: Review and respond to PR comments
    - "You don't have to do everything; just use what you need."
 
 3. **Determine review response strategy**:
-   - For each review comment, evaluate:
+   - Skip resolved comments - they have already been addressed
+   - For each unresolved review comment, evaluate:
      - Validity of the comment
      - Necessity of addressing it
      - Expected quality improvement from addressing it
