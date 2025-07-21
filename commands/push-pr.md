@@ -94,6 +94,8 @@ description: Push current branch and create a pull request with user's approval
 - Always create pr.md for user review before PR creation/update
 - Only propose PR updates if content would meaningfully change
 - When updating PR, show clear comparison of changes
+- **PR title/description**: Use the same language as the repository's existing PRs
+- **User communication**: Respond in Japanese
 
 ## User additional instructions
 

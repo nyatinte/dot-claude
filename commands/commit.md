@@ -15,6 +15,7 @@ description: Create a git commit
 
 Based on the above changes, create a single git commit.
 
-## Response Language
+## Important Notes
 
-Please respond in Japanese (日本語で返信してください)
+- **Commit messages**: Use the same language as the repository's existing commits (check recent commit history)
+- **User communication**: Respond in Japanese (日本語で返信してください)
