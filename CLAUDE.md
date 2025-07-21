@@ -1,46 +1,56 @@
 # CLAUDE.md
 
-## 最重要ルール - 新しいルールの追加プロセス
+## Top Priority Rule - New Rule Addition Process
 
-### ルール追加の手順
+### Rule Addition Steps
 
-1. **判断基準**: ユーザーから今回限りではなく常に対応が必要だと思われる指示を受けた場合
-2. **確認**: 「これを標準のルールにしますか？」と質問する
-3. **追加**: YESの回答を得た場合、プロジェクトのCLAUDE.mdに追加ルールとして記載する
-4. **適用**: 以降は標準ルールとして常に適用する
+1. **Criteria**: When receiving instructions from the user that seem to require constant application rather than one-time use. For example: "Please do this from next time", "Please handle this way from now on", etc.
+2. **Confirmation**: Ask "Should this be made a standard rule?"
+3. **Addition**: If YES response is received, add as a rule in the project's CLAUDE.md
+4. **Application**: Apply as standard rule thereafter
 
-> このプロセスにより、プロジェクトのルールを継続的に改善していきます。
+## Top Priority Rule - Thinking and Action Guidelines
 
-## 📜 基本ルール
+Think in English, communicate with users in Japanese.
 
-### コミュニケーション
+## 📜 Basic Rules
 
-- **言語**: 返事は原則として日本語で行う
-- **不明点の対応**:
-  - わからないことは「わかりません」と答える
-- **出典**: 出典がある場合は必ず明記する
+### Communication
 
-### タスク管理
+- **Language**: Respond primarily in Japanese
+- **Handling unknowns**:
+  - Answer "I don't know" for things you don't understand
+- **Citations**: Always specify sources when available
 
-- **タスク分割**: 与えられた指示に対してはタスクに分割して実行する
-- **意思決定**: 実装方針に迷ったら2択の選択肢を私に提示してください
+### Task Management
 
-### 開発ツール
+- **Task division**: Divide given instructions into tasks for execution
+- **Decision making**: Present two options when uncertain about implementation approach
+- **Complex tasks**: Use `/kiro` command for structured workflow execution
 
-- **検索**: grepではなく`ripgrep`を使用すること
+### Development Tools
+
+- **Search**: Use `ripgrep` instead of grep
   - NG: `Bash(grep -r "pattern" .)`
   - OK: `Bash(rg "pattern")`
-- **ファイル探索**: findの代替で`fd`を使用すること
+- **File exploration**: Use `fd` as alternative to find
   - NG: `Bash(find . -name "*.js")`
   - OK: `Bash(fd "*.js")`
-- **uithub**: uithubというリンクはGitHubのtypoではなく、リポジトリの内容をLLM向けに提供してくれるサイトです
+- **uithub**: uithub links are not GitHub typos, but a site that provides repository content for LLMs
+- **context7**: context7 provides up-to-date information about libraries
 
-## 🔧 開発環境設定
+## 🔧 Development Environment Settings
 
-### TypeScript/Next.js開発
+### Common
 
-- **型安全性**: `any`型は禁止。`as`も極力使用しない
-- **関数定義**:
-  - コンポーネント: `function`宣言
-  - 通常の関数: アロー関数
-- **エクスポート**: `default export`はページコンポーネント以外では避ける
+- Delete unnecessary comments. Use comments to clarify "why" when needed. Do not comment on what is obvious from the code
+- Follow DRY, YAGNI principles
+- Do not skip test implementation by default, implement tests that mimic user behavior
+
+### TypeScript/Next.js Development
+
+- **Type safety**: `any` type is prohibited. Avoid using `as` as much as possible
+- **Function definitions**:
+  - Components: `function` declaration
+  - Regular functions: arrow functions
+- **Exports**: Avoid `default export` except for page components

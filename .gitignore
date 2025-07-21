@@ -4,6 +4,7 @@
 # 設定ファイル
 !.gitignore
 !CLAUDE.md
+!CLAUDE_JA.md
 !settings.json
 !terminal-notifier-reference.md
 
