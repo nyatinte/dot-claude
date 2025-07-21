@@ -14,3 +14,7 @@ description: Create a git commit
 ## Your task
 
 Based on the above changes, create a single git commit.
+
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)

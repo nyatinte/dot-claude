@@ -4,6 +4,10 @@
 
 Reproduce the problem and fix the bug
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ## Steps
 
 User-provided bug description: $ARGUMENTS

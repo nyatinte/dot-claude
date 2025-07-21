@@ -15,6 +15,10 @@ description: Save conversation knowledge to structured docs
 
 Save conversation history and project knowledge to a structured documentation file.
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ## User additional instructions
 
 $ARGUMENTS

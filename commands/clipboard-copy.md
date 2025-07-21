@@ -12,6 +12,10 @@ description: Copy specified content to clipboard
 
 Copy the specified content to the clipboard based on the provided arguments.
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ## Usage
 - Use `$ARGUMENTS` to specify what to copy
 - If no arguments provided, copy relevant content from current conversation context

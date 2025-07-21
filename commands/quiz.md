@@ -14,6 +14,10 @@ description: Generate comprehension quiz based on session content
 
 Analyze the conversation session content and generate an interactive quiz to verify user's understanding.
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ### 1. **Analyze session content**:
 
 Identify the following elements:

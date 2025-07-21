@@ -14,6 +14,10 @@ description: Execute structured 4-phase workflow for complex development tasks
 
 Execute a structured 4-phase workflow combining Kiro's documentation rigor with CLAUDE.md's systematic approach.
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ### Phase 1: Requirements Definition
 
 1. **Setup directory structure**:

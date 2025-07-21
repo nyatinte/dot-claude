@@ -14,6 +14,10 @@ description: Perform comprehensive code review on current changes
 
 Perform a thorough code review of the current changes and generate a detailed review report.
 
+## Response Language
+
+Please respond in Japanese (日本語で返信してください)
+
 ### 1. **Identify changes to review**:
 
 Priority order for identifying diffs:
