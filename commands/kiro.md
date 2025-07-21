@@ -28,11 +28,11 @@ Execute a structured 4-phase workflow combining Kiro's documentation rigor with 
    - Constraints and assumptions
    - Questions for clarification
 
-3. **Get confirmation**: "要件定義フェーズが完了しました。内容を確認していただき、設計フェーズに進んでよろしいですか？"
+3. **Get confirmation**: "Requirements definition phase completed. Please review the content. May I proceed to the design phase?"
 
 ### Phase 2: Design
 
-1. **Read requirements**: 必ず`.claude_workflow/requirements.md`を読み込んでから開始
+1. **Read requirements**: Always read `.claude_workflow/requirements.md` before starting
 
 2. **Create design document** in `.claude_workflow/design.md`:
    - Architecture and component structure
@@ -40,11 +40,11 @@ Execute a structured 4-phase workflow combining Kiro's documentation rigor with 
    - Data flow and interactions
    - Potential challenges and mitigation strategies
 
-3. **Get confirmation**: "設計フェーズが完了しました。内容を確認していただき、タスク化フェーズに進んでよろしいですか？"
+3. **Get confirmation**: "Design phase completed. Please review the content. May I proceed to the task breakdown phase?"
 
 ### Phase 3: Task Breakdown
 
-1. **Read design**: 必ず`.claude_workflow/design.md`を読み込んでから開始
+1. **Read design**: Always read `.claude_workflow/design.md` before starting
 
 2. **Create task list** in `.claude_workflow/tasks.md`:
    - Detailed task list with dependencies
@@ -52,11 +52,11 @@ Execute a structured 4-phase workflow combining Kiro's documentation rigor with 
    - Testing approach for each component
    - Rollback strategies
 
-3. **Get confirmation**: "タスク化フェーズが完了しました。実装計画を確認していただき、実行フェーズに進んでよろしいですか？"
+3. **Get confirmation**: "Task breakdown phase completed. Please review the implementation plan. May I proceed to the execution phase?"
 
 ### Phase 4: Execution
 
-1. **Read tasks**: 必ず`.claude_workflow/tasks.md`を読み込んでから開始
+1. **Read tasks**: Always read `.claude_workflow/tasks.md` before starting
 
 2. **Execute implementation**:
    - Use TodoWrite to track task progress

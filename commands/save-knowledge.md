@@ -21,8 +21,8 @@ $ARGUMENTS
 
 ## Important Guidelines
 
-- **Language**: 日本語で文書を作成する
-- **Style**: ブログ記事風の読みやすい形式で書く  
+- **Language**: Write documentation in a clear, professional manner
+- **Style**: Use blog-article style for readability  
 - **Format**: Use professional markdown structure
 - **Directory**: Context section commands ensure directory exists
 

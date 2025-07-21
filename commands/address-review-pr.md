@@ -35,7 +35,7 @@ description: Review and respond to PR comments
 
 4. **Propose review responses**:
    - If there are **3 or more** review comments:
-     - Create a `review-pr-{PR_number}.md` file **in Japanese**
+     - Create a `review-pr-{PR_number}.md` file
      - For each review comment, summarize:
        - Review content
        - Current implementation
