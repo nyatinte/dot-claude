@@ -1,53 +1,64 @@
 ---
-allowed-tools: Bash(pbcopy:*), Bash(echo:*), Read, Glob, LS
+allowed-tools: Bash(pbcopy:*), Bash(echo:*), Read, Glob, LS, Grep
 description: Copy specified content to clipboard
 ---
 
 ## Context
 
-- Arguments provided: `$ARGUMENTS`
 - Current working directory: `!pwd`
 
 ## Your task
 
-Copy the specified content to the clipboard based on the provided arguments.
+Copy the requested content to the clipboard based on user instructions.
 
 ## Response Language
 
 Please respond in Japanese (日本語で返信してください)
 
-## Usage
-- Use `$ARGUMENTS` to specify what to copy
-- If no arguments provided, copy relevant content from current conversation context
+## How to interpret user requests
 
-## Supported Content Types
-1. **File paths**: Copy entire file contents
-   - Example: `$ARGUMENTS = "/path/to/file.js"`
-   - Copy the complete file content
+### 1. **Direct copy requests**
+- "下をコピーして" → Copy the content below/previous message
+- "上の内容をコピー" → Copy the content above
+- "これをコピー" → Copy the referenced content
 
-2. **Directory paths**: Copy file structure or specific files from directory
-   - Example: `$ARGUMENTS = "/path/to/directory"`
-   - List and copy relevant files or directory structure
+### 2. **File operations**
+- File path given → Copy entire file contents with clear headers
+- Directory path given → Copy directory structure or relevant files
 
-3. **Code snippets**: Copy specific code blocks or functions
-   - Example: `$ARGUMENTS = "function calculateTotal from utils.js"`
-   - Extract and copy the specified function
+### 3. **Code extraction**
+- "関数名 from ファイル名" → Extract and copy specific function
+- "classの定義をコピー" → Find and copy class definition
 
-4. **Text content**: Copy any specified text or data
-   - Example: `$ARGUMENTS = "API documentation for getUserProfile"`
-   - Copy relevant documentation or information
+### 4. **Context-aware copying**
+- No specific target → Intelligently identify most relevant recent content
+- "さっきのコミットメッセージ" → Find and copy recent commit message
+- "エラーメッセージをコピー" → Find and copy recent error output
 
-5. **Multiple items**: Copy multiple files or code blocks
-   - Example: `$ARGUMENTS = "src/components/Header.tsx src/styles/header.css"`
-   - Copy multiple specified files
+## Copy behavior
 
-## Behavior
-- Read and copy the exact content specified in $ARGUMENTS
-- For files: include file path as comment/header
-- For code: preserve formatting and indentation
-- For directories: provide clear structure overview
-- If $ARGUMENTS is empty: intelligently copy most relevant content from current conversation
-- Always confirm what was copied to clipboard
+1. **Identify what to copy**:
+   - Parse user instructions carefully
+   - When ambiguous, choose the most recent relevant content
+   - Prefer complete, useful chunks over fragments
 
-## Output Format
-Provide the copied content in a clear, formatted manner and confirm the clipboard operation was successful.
+2. **Format for clipboard**:
+   - Preserve original formatting and indentation
+   - Add file paths as comments for context
+   - Ensure content is ready for immediate use
+
+3. **Confirm the operation**:
+   - Show what was copied (abbreviated if very long)
+   - Confirm successful clipboard operation
+   - Provide helpful context about the copied content
+
+## Examples
+
+- User: "下をコピーして" → Copy the immediate previous content
+- User: "/path/to/script.sh" → Copy entire script file
+- User: "parseConfig from config.js" → Extract parseConfig function
+- User: "最後のエラー" → Find and copy most recent error message
+
+## User additional instructions
+
+$ARGUMENTS
