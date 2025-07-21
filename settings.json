@@ -26,7 +26,8 @@
     "deny": [
       "Bash(curl:*)",
       "Bash(rm -rf *)",
-      "Bash(rm -rf /)"
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~*)"
     ]
   },
   "hooks": {
@@ -36,7 +37,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/nyante/.claude/scripts/claude-notify.sh approval"
+            "command": "~/.claude/scripts/claude-notify.sh approval"
           }
         ]
       }
@@ -46,7 +47,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/nyante/.claude/scripts/claude-notify.sh complete"
+            "command": "~/.claude/scripts/claude-notify.sh complete"
           }
         ]
       }
