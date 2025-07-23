@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git push:*), mcp__github__list_pull_requests, mcp__github__get_pull_request, mcp__github__search_issues, mcp__github__get_pull_request_files, Write(pr.md), Read(*), Bash(gh pr create:*), Bash(gh pr list:*), Bash(gh repo view:*)
+allowed-tools: Bash(git push:*), mcp__github__list_pull_requests, mcp__github__get_pull_request, mcp__github__search_issues, mcp__github__get_pull_request_files, Write(pr.md), Read(*), Bash(gh pr create:*), Bash(gh pr list:*), Bash(gh pr view:*), Bash(gh repo view:*)
 denied-tools: mcp__github__create_pull_request, mcp__github__merge_pull_request
 description: 現在のブランチをプッシュしてプルリクエストを作成（ユーザー承認付き）
 ---
