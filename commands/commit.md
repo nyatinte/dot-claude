@@ -17,5 +17,6 @@ Based on the above changes, create a single git commit.
 
 ## Important Notes
 
+- **Selective staging**: Only stage files that are directly related to the task. Do not use `git add .` as it may include temporary notes or unrelated work-in-progress files
 - **Commit messages**: Use the same language as the repository's existing commits (check recent commit history)
 - **User communication**: Respond in Japanese (日本語で返信してください)
