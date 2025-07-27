@@ -12,6 +12,8 @@
 !commands/**
 !scripts/
 !scripts/**
+!agents/
+!agents/**
 
 session-summary.log
 notification.log
